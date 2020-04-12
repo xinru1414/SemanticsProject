@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+gensim = "*"
+numpy = "*"
+spacy = "*"
+click = "*"
+pandas = "*"
+nltk = "*"
+scikit-learn = "*"
+matplotlib = "*"
+joblib = "*"
+transformers = "*"
+seaborn = "*"
+torchtext = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
