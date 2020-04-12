@@ -1,0 +1,61 @@
+mode SM
+vocab size is 2785, semantic label size is 19, speaker size is 2, face label size is 9
+{'erneg-': 0, 'eepos+': 1, 'erpos+': 2, 'erneg+': 3, 'none': 4, 'eepos-': 5, 'eeneg-': 6, 'erpos-': 7, 'eeneg+': 8} {0: 'erneg-', 1: 'eepos+', 2: 'erpos+', 3: 'erneg+', 4: 'none', 5: 'eepos-', 6: 'eeneg-', 7: 'erpos-', 8: 'eeneg+'}
+{'rejected social status -': 0, 'completed closeness +': 1, 'proposed social status +': 2, 'completed social status -': 3, 'completed social good +': 4, 'proposed social good -': 5, 'rejected social good -': 6, 'rejected social status +': 7, 'proposed closeness -': 8, 'completed closeness -': 9, 'rejected social good +': 10, 'rejected closeness +': 11, 'proposed social status -': 12, 'completed social status +': 13, 'none': 14, 'rejected closeness -': 15, 'completed social good -': 16, 'proposed social good +': 17, 'proposed closeness +': 18} {0: 'rejected social status -', 1: 'completed closeness +', 2: 'proposed social status +', 3: 'completed social status -', 4: 'completed social good +', 5: 'proposed social good -', 6: 'rejected social good -', 7: 'rejected social status +', 8: 'proposed closeness -', 9: 'completed closeness -', 10: 'rejected social good +', 11: 'rejected closeness +', 12: 'proposed social status -', 13: 'completed social status +', 14: 'none', 15: 'rejected closeness -', 16: 'completed social good -', 17: 'proposed social good +', 18: 'proposed closeness +'}
+padding
+Epoch: 01 | Epoch Time: 0m 23s
+	Train Loss: 1.310 | Train Acc: 0.52
+	  Dev Loss: 1.106 |   Dev Acc: 0.54
+Save the best model
+Epoch: 02 | Epoch Time: 0m 25s
+	Train Loss: 0.883 | Train Acc: 0.68
+	  Dev Loss: 0.990 |   Dev Acc: 0.62
+Save the best model
+Epoch: 03 | Epoch Time: 0m 25s
+	Train Loss: 0.655 | Train Acc: 0.78
+	  Dev Loss: 1.066 |   Dev Acc: 0.62
+Epoch: 04 | Epoch Time: 0m 26s
+	Train Loss: 0.520 | Train Acc: 0.83
+	  Dev Loss: 1.167 |   Dev Acc: 0.61
+Epoch: 05 | Epoch Time: 0m 25s
+	Train Loss: 0.425 | Train Acc: 0.86
+	  Dev Loss: 1.287 |   Dev Acc: 0.63
+Dev loss did not decrease in 3 epochs, halfing the learning rate
+Epoch: 06 | Epoch Time: 0m 25s
+	Train Loss: 0.346 | Train Acc: 0.89
+	  Dev Loss: 1.490 |   Dev Acc: 0.60
+Epoch: 07 | Epoch Time: 0m 27s
+	Train Loss: 0.284 | Train Acc: 0.92
+	  Dev Loss: 1.568 |   Dev Acc: 0.60
+Epoch: 08 | Epoch Time: 0m 32s
+	Train Loss: 0.264 | Train Acc: 0.92
+	  Dev Loss: 1.456 |   Dev Acc: 0.63
+Dev loss did not decrease in 3 epochs, halfing the learning rate
+Epoch: 09 | Epoch Time: 0m 29s
+	Train Loss: 0.253 | Train Acc: 0.92
+	  Dev Loss: 1.498 |   Dev Acc: 0.61
+Epoch: 10 | Epoch Time: 0m 34s
+	Train Loss: 0.190 | Train Acc: 0.94
+	  Dev Loss: 1.667 |   Dev Acc: 0.63
+Epoch: 11 | Epoch Time: 0m 31s
+	Train Loss: 0.162 | Train Acc: 0.95
+	  Dev Loss: 1.652 |   Dev Acc: 0.61
+Dev loss did not decrease in 3 epochs, halfing the learning rate
+Evaluating model on test set
+Load the best model
+              precision    recall  f1-score   support
+
+      eeneg+       0.00      0.00      0.00         6
+      eeneg-       0.80      0.50      0.62        16
+      eepos+       0.43      0.28      0.34        46
+      erneg+       0.00      0.00      0.00         1
+      erneg-       0.80      0.42      0.55        19
+      erpos+       0.56      0.68      0.61        74
+      erpos-       0.00      0.00      0.00         8
+        none       0.65      0.77      0.71       170
+
+    accuracy                           0.62       340
+   macro avg       0.41      0.33      0.35       340
+weighted avg       0.59      0.62      0.59       340
+
+Test Loss: 0.990 | Test Acc: 0.62

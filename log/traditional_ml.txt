@@ -1,0 +1,193 @@
+training and testing SVM model
+speaker + semantic + text
+              precision    recall  f1-score   support
+
+      EENeg+       1.00      0.50      0.67         6
+      EENeg-       0.62      0.62      0.62        16
+      EEPos+       0.45      0.30      0.36        46
+      ERNeg+       0.50      1.00      0.67         1
+      ERNeg-       0.62      0.42      0.50        19
+      ERPos+       0.55      0.55      0.55        74
+      ERPos-       0.67      0.25      0.36         8
+        none       0.66      0.76      0.71       170
+
+    accuracy                           0.61       340
+   macro avg       0.63      0.55      0.56       340
+weighted avg       0.61      0.61      0.60       340
+
+semantic + text
+              precision    recall  f1-score   support
+
+      EENeg+       1.00      0.50      0.67         6
+      EENeg-       0.71      0.62      0.67        16
+      EEPos+       0.45      0.22      0.29        46
+      ERNeg+       1.00      1.00      1.00         1
+      ERNeg-       0.88      0.37      0.52        19
+      ERPos+       0.52      0.54      0.53        74
+      ERPos-       0.40      0.25      0.31         8
+        none       0.65      0.80      0.72       170
+
+    accuracy                           0.61       340
+   macro avg       0.70      0.54      0.59       340
+weighted avg       0.61      0.61      0.60       340
+
+speaker + text
+              precision    recall  f1-score   support
+
+      EENeg+       0.50      0.17      0.25         6
+      EENeg-       0.73      0.69      0.71        16
+      EEPos+       0.44      0.33      0.38        46
+      ERNeg+       0.50      1.00      0.67         1
+      ERNeg-       0.62      0.42      0.50        19
+      ERPos+       0.55      0.54      0.54        74
+      ERPos-       0.50      0.12      0.20         8
+        none       0.65      0.76      0.70       170
+
+    accuracy                           0.61       340
+   macro avg       0.56      0.50      0.49       340
+weighted avg       0.60      0.61      0.59       340
+
+text
+              precision    recall  f1-score   support
+
+      EENeg+       0.67      0.14      0.24        14
+      EENeg-       0.44      0.65      0.52        17
+      EEPos+       0.37      0.36      0.37        36
+      ERNeg+       0.00      0.00      0.00         0
+      ERNeg-       0.47      0.33      0.39        21
+      ERPos+       0.45      0.47      0.46        76
+      ERPos-       1.00      0.17      0.29         6
+        none       0.65      0.69      0.67       170
+
+    accuracy                           0.55       340
+   macro avg       0.51      0.35      0.37       340
+weighted avg       0.56      0.55      0.54       340
+
+training and testing LR model
+speaker + semantic + text
+              precision    recall  f1-score   support
+
+      EENeg+       1.00      0.67      0.80         6
+      EENeg-       0.80      0.50      0.62        16
+      EEPos+       0.56      0.33      0.41        46
+      ERNeg+       0.00      0.00      0.00         1
+      ERNeg-       0.75      0.47      0.58        19
+      ERPos+       0.58      0.53      0.55        74
+      ERPos-       0.50      0.12      0.20         8
+        none       0.63      0.81      0.71       170
+
+    accuracy                           0.63       340
+   macro avg       0.60      0.43      0.48       340
+weighted avg       0.63      0.63      0.61       340
+
+semantic + text
+              precision    recall  f1-score   support
+
+      EENeg+       1.00      0.67      0.80         6
+      EENeg-       0.73      0.50      0.59        16
+      EEPos+       0.47      0.15      0.23        46
+      ERNeg+       0.00      0.00      0.00         1
+      ERNeg-       1.00      0.16      0.27        19
+      ERPos+       0.59      0.55      0.57        74
+      ERPos-       1.00      0.12      0.22         8
+        none       0.61      0.84      0.70       170
+
+    accuracy                           0.61       340
+   macro avg       0.67      0.37      0.42       340
+weighted avg       0.62      0.61      0.57       340
+
+speaker + text
+              precision    recall  f1-score   support
+
+      EENeg+       0.00      0.00      0.00         6
+      EENeg-       0.75      0.38      0.50        16
+      EEPos+       0.54      0.33      0.41        46
+      ERNeg+       0.00      0.00      0.00         1
+      ERNeg-       0.50      0.21      0.30        19
+      ERPos+       0.52      0.50      0.51        74
+      ERPos-       1.00      0.12      0.22         8
+        none       0.60      0.79      0.69       170
+
+    accuracy                           0.58       340
+   macro avg       0.49      0.29      0.33       340
+weighted avg       0.57      0.58      0.55       340
+
+text
+              precision    recall  f1-score   support
+
+      EENeg+       0.00      0.00      0.00        14
+      EENeg-       0.44      0.47      0.46        17
+      EEPos+       0.50      0.25      0.33        36
+      ERNeg-       0.60      0.14      0.23        21
+      ERPos+       0.52      0.47      0.50        76
+      ERPos-       0.00      0.00      0.00         6
+        none       0.61      0.82      0.70       170
+
+    accuracy                           0.58       340
+   macro avg       0.38      0.31      0.32       340
+weighted avg       0.53      0.58      0.53       340
+
+training and testing NB model
+speaker + semantic + text
+              precision    recall  f1-score   support
+
+      EENeg+       1.00      0.33      0.50         6
+      EENeg-       0.73      0.50      0.59        16
+      EEPos+       0.40      0.13      0.20        46
+      ERNeg+       0.00      0.00      0.00         1
+      ERNeg-       1.00      0.37      0.54        19
+      ERPos+       0.57      0.49      0.53        74
+      ERPos-       0.00      0.00      0.00         8
+        none       0.60      0.86      0.71       170
+
+    accuracy                           0.60       340
+   macro avg       0.54      0.33      0.38       340
+weighted avg       0.59      0.60      0.56       340
+
+semantic + text
+              precision    recall  f1-score   support
+
+      EENeg+       1.00      0.50      0.67         6
+      EENeg-       0.80      0.50      0.62        16
+      EEPos+       0.50      0.09      0.15        46
+      ERNeg+       0.00      0.00      0.00         1
+      ERNeg-       0.67      0.11      0.18        19
+      ERPos+       0.55      0.49      0.52        74
+      ERPos-       0.00      0.00      0.00         8
+        none       0.59      0.88      0.71       170
+
+    accuracy                           0.59       340
+   macro avg       0.51      0.32      0.35       340
+weighted avg       0.58      0.59      0.54       340
+
+speaker + text
+              precision    recall  f1-score   support
+
+      EENeg+       0.00      0.00      0.00         6
+      EENeg-       0.80      0.25      0.38        16
+      EEPos+       0.39      0.15      0.22        46
+      ERNeg+       0.00      0.00      0.00         1
+      ERNeg-       1.00      0.21      0.35        19
+      ERPos+       0.59      0.47      0.53        74
+      ERPos-       0.00      0.00      0.00         8
+        none       0.59      0.88      0.71       170
+
+    accuracy                           0.59       340
+   macro avg       0.42      0.25      0.27       340
+weighted avg       0.57      0.59      0.54       340
+
+text
+              precision    recall  f1-score   support
+
+      EENeg+       0.00      0.00      0.00        14
+      EENeg-       0.55      0.35      0.43        17
+      EEPos+       0.36      0.14      0.20        36
+      ERNeg-       1.00      0.10      0.17        21
+      ERPos+       0.50      0.41      0.45        76
+      ERPos-       0.00      0.00      0.00         6
+        none       0.59      0.87      0.70       170
+
+    accuracy                           0.56       340
+   macro avg       0.43      0.27      0.28       340
+weighted avg       0.53      0.56      0.51       340
+
