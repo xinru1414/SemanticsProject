@@ -14,8 +14,6 @@ bilstm: trained bilstm model
 traditional: trained traditional ml model
 
 ## src
-source code
-
 train bilstm 
 ```bash
 python train.py
